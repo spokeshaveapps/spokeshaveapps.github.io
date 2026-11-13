@@ -1,0 +1,2 @@
+# Authorised sellers for Spokeshave Apps apps (IAB app-ads.txt).
+google.com, pub-6968104126588311, DIRECT, f08c47fec0942fa0
