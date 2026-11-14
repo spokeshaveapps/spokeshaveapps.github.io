@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chiselmark — Privacy policy</title>
+<meta name="description" content="Privacy policy for Chiselmark, the on-device QR code and barcode scanner and maker by Spokeshave Apps.">
+<style>
+  :root { color-scheme: light dark; --fg:#1c1b1f; --muted:#5f5b66; --bg:#fffbfe; --accent:#9a4600; }
+  @media (prefers-color-scheme: dark) { :root { --fg:#e6e1e5; --muted:#cac4d0; --bg:#1c1b1f; --accent:#ffb68a; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  main { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  h1 { font-size:1.9rem; margin:0 0 4px; } h2 { font-size:1.2rem; margin:32px 0 8px; }
+  .muted { color:var(--muted); } a { color:var(--accent); }
+  .box { border:1px solid color-mix(in srgb, var(--fg) 15%, transparent); border-radius:16px; padding:16px 20px; }
+  table { border-collapse:collapse; width:100%; font-size:.95rem; } th,td { text-align:left; vertical-align:top; padding:8px; border-bottom:1px solid color-mix(in srgb, var(--fg) 12%, transparent); }
+</style>
+</head>
+<body>
+<main>
+<h1>Chiselmark privacy policy</h1>
+<p class="muted">Effective 14 November 2026 · Chiselmark for Android (package <code>com.spokeshaveapps.chiselmark</code>) · by Spokeshave Apps</p>
+
+<div class="box">
+<p><strong>In short:</strong> Chiselmark scans and makes QR codes and barcodes on your phone. What you scan, the codes
+you make, your history and any Wi-Fi passwords are never uploaded to us or anyone else. We have no servers and no
+accounts. The free version shows ads from Google AdMob, which collects some device data under the ad privacy choices
+you make. Buying Pro removes ads.</p>
+</div>
+
+<h2>1. Camera and images</h2>
+<p>Camera frames are read on your phone by Google’s ML Kit barcode model, which is built into the app, and are never
+saved or uploaded. Images you pick in the Android photo picker or share to Chiselmark are read the same way and are not
+copied or kept. Chiselmark never opens a link, joins a network or starts a payment by itself: you tap first. When it
+opens a link it removes common tracking tags (such as <code>utm_source</code> or <code>fbclid</code>) unless you turn
+that off; what the code says is kept unchanged in your history.</p>
+<p><strong>Two-factor (2FA) setup codes.</strong> If you scan an <code>otpauth://</code> code, Chiselmark shows the
+account and passes the code to your authenticator app only when you tap. The secret key is never written to history or
+anywhere else, and screenshots are blocked while it is on screen.</p>
+<p><strong>Scanning for other apps.</strong> Other apps may ask Chiselmark to scan one code for them (the standard
+“Barcode Scanner” intent). The scanned text goes back to that app only, and is not added to your history.</p>
+
+<h2>2. Permissions</h2>
+<table>
+<tr><th>Permission</th><th>Why</th></tr>
+<tr><td>Camera</td><td>To scan codes. Frames are processed on the phone and never stored.</td></tr>
+<tr><td>Internet, network state</td><td>Only for ads in the free version, the ad consent form and Google Play purchases. Never for scans or codes.</td></tr>
+<tr><td>Google Play billing</td><td>To buy and restore Chiselmark Pro.</td></tr>
+<tr><td>Notifications</td><td>To show the progress of large batches.</td></tr>
+<tr><td>Vibrate, biometric</td><td>Scan feedback, and the optional lock on History and My codes.</td></tr>
+</table>
+<p>Chiselmark does not request storage, media, location, contacts, calendar or microphone permissions. Contacts and
+calendar events you scan are handed to your own Contacts or Calendar app to save.</p>
+
+<h2>3. What stays on your phone</h2>
+<p>In its private app storage, and only on your device, Chiselmark keeps: your settings, your scan history (unless you
+set history to Off), the codes you create, brand kits and logos you add, and on-device Insights counts (dates, code
+types and link domains, no contents). Exported images and PDFs are saved where you choose (Pictures or Download).
+History, codes and logos are excluded from Android cloud and device-transfer backups. Your Pro status is not stored;
+it is asked from Google Play. We cannot see any of it.</p>
+
+<h2>4. Ads (free version only)</h2>
+<p>The free version shows banner ads from <strong>Google AdMob</strong>. Before any ad request, Chiselmark uses
+Google’s User Messaging Platform to ask for consent where the law requires it (for example in the EEA, UK
+and Switzerland, and in some US states). You can change your choice any time in Settings → Ad privacy
+choices.</p>
+<p>When ads are shown, the Google Mobile Ads SDK automatically collects and shares with Google:
+IP address (which can indicate approximate location), ad and product interactions, diagnostic information,
+and device identifiers such as the Android advertising ID. Google uses this for advertising, analytics and
+fraud prevention. Learn more: <a href="https://policies.google.com/technologies/partner-sites">How Google uses
+information from apps that use its services</a>. You can reset or delete your advertising ID in Android
+Settings → Privacy → Ads. Ads never receive what you scan or create.</p>
+<p>Chiselmark Pro users see no ads. Once Google Play confirms your Pro purchase, the ads SDK and consent form are not started at all.</p>
+<p>The ML Kit library may send Google anonymous diagnostics about its own performance; it never sends camera frames,
+images or decoded contents.</p>
+
+<h2>5. Purchases</h2>
+<p>Chiselmark Pro is a one-time purchase handled entirely by <strong>Google Play</strong>. We never see your
+payment details. The app receives only whether you own Pro. See the
+<a href="https://payments.google.com/payments/apis-secure/u/0/get_legal_document?ldo=0&amp;ldt=privacynotice">Google Payments privacy notice</a>.</p>
+
+<h2>6. Bug reports and feature requests</h2>
+<p>Settings → Report a bug / Request a feature prepares an email in your own email app. Nothing is sent until
+you tap Send there. It contains only what you type and, if you leave the switch on, the app version, Android
+version, phone model and app language. It never contains scans, codes or history. We use these emails
+only to fix bugs and plan features, and delete them when they are no longer needed.</p>
+
+<h2>7. Analytics</h2>
+<p>Chiselmark contains no analytics service. Insights are counted on your phone and shown only to you.</p>
+
+<h2>8. Children</h2>
+<p>Chiselmark is not directed at children under 13 and is not designed for them.</p>
+
+<h2>9. Deleting your data</h2>
+<p>Delete single scans or clear history in the app, or remove everything with Android Settings → Apps → Chiselmark →
+Storage → Clear storage, or uninstall the app. Exported images and PDFs are normal files you can delete any time. To
+have a feedback email you sent us deleted, write to the address below.</p>
+
+<h2>10. Changes</h2>
+<p>If this policy changes, we will update this page and its effective date before the change applies.</p>
+
+<h2>11. Contact</h2>
+<p>Spokeshave Apps · <a href="mailto:spokeshaveapps+chiselmark@gmail.com">spokeshaveapps+chiselmark@gmail.com</a></p>
+</main>
+</body>
+</html>
